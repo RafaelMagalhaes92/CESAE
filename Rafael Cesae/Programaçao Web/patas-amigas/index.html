@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas Amigas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-conteudo"> <!-- 2. O menu é uma lista `ul` com quatro links que levam às secções da página (`#animais`,`#adotar`, `#visitas` e `#contacto`). -->
+            <p class="logotipo"> Patas <span> Amigas </span> </p>
+            <nav>
+                <ul>
+                    <li><a href="#animais"> Animais </a></li>
+                    <li><a href="#adotar"> Como adotar </a></li>
+                    <li><a href="#visitas"> Visitas </a></li>
+                    <li><a href="#contacto"> Contacto </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 3. Só pode haver um `h1`. Os títulos das secções são `h2` e os nomes dos animais são `h3`. -->
+    <main>
+        <section class="destaque">
+            <div>
+                <h1> Dá uma casa a quem só precisa de carinho </h1> <!-- Apenas um h1 -->
+                <p>
+                    Somos uma associação do Porto que acolhe cães, gatos e coelhos
+                    <br>
+                    à espera de uma família.
+                </p>
+                <a href="#animais" class="botao"> Conhecer os animais </a>
+            </div>
+        </section>
+
+        <div class="container conteudo">
+            <section id="animais">
+
+                <h2> Animais para adoção </h2>
+
+                <div class="cartoes">
+                    <article class="cartao">
+                        <p class="selo"> Novo </p>
+                        <img src="img/cao.svg" alt="Cão castanho"> <!-- 4. As três imagens têm um `alt` que descreve o animal. -->
+                        <h3>Rex</h3>
+                        <p> Cão, 3 anos. Adora passear e brincar com a bola. </p>
+                    </article>
+
+                    <article class="cartao">
+                        <img src="img/gato.svg" alt="Gata cinzenta">
+                        <h3>Mia</h3>
+                        <p> Gata, 2 anos. Tranquila, gosta de dormir ao sol. </p>
+                    </article>
+
+                    <article class="cartao">
+                        <img src="img/coelho.svg" alt="Coelho branco">
+                        <h3>Tambor</h3>
+                        <p>Coelho, 1 ano. Curioso e muito meigo.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="adotar"> <!-- 5. A secção "Como adotar" é uma lista numerada (`ol`). -->
+                <h2> Como adotar </h2>
+                <ol>
+                    <li>Escolhe o animal que mais combina contigo.</li>
+                    <li>Preenche o formulário de contacto</li>
+                    <li>Visita-nos para o conheceres pessoalmente.</li>
+                    <li>Leva o teu novo amigo para casa.</li>
+                </ol>
+            </section>
+
+            <section id="visitas"> <!-- 6. O horário é uma tabela com `thead` e `tbody`. -->
+                <h2> Horário de visitas </h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Segunda a sexta</td>
+                            <td>14h00 às 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td> 10h00 às 13h00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Encerrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="contacto">
+                <!-- 7. O formulário tem `label` ligados aos campos (`for` e `id`), campos de texto e email obrigatórios, um `select` com os três animais, uma `textarea` e um botão.-->
+                <h2> Contacto </h2>
+
+                <form action="#" method="post">
+
+                    <div class="campo">
+                        <label for="nome"> Nome </label> <!-- Elemento Nome -->
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email"> Email </label> <!-- Elemento Email -->
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="animal"> Animal </label> <!-- Elemento de Selecionar o animal -->
+                        <select id="animal" name="animal">
+                            <option value="rex"> Rex </option>
+                            <option value="mia"> Mia </option>
+                            <option value="tambor"> Tambor </option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem"> Mensagem </label> <!-- Elemento Mensagem -->
+                        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="botao"> Enviar </button> <!-- Elemento Botão de enviar -->
+
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2026 Patas Amigas, Rua das flores, 123, Porto. </p>
+    </footer>
+
+</body>
+
+</html>
