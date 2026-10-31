@@ -21,7 +21,6 @@ body {
 /* --------------- */
 
 header {
-    background-color: #ffffff;
     padding: 12px 0;
 }
 
@@ -58,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #e40084;
+    color: #b8006a;
 }
 
 /* --------------- */
@@ -128,7 +127,7 @@ section h2 {
     border: 3px solid #1d1148;
     border-radius: 20px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
 }
@@ -214,6 +213,7 @@ form {
 }
 
 .campo label {
+    display: block;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -265,7 +265,7 @@ footer {
 
 @media (max-width: 700px) {
 
-    .header-content {
+    .header-conteudo {
         flex-direction: column;
         align-items: center;
     }
@@ -296,7 +296,7 @@ footer {
 
 @media (max-width: 350px) {
 
-    .logo {
+    .logotipo {
         font-size: 19px;
     }
 
