@@ -6,10 +6,12 @@ public class Ex14 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int qtdInserida, numeroAnterior = 0, numeroAtual;
+        int qtdInserida, numeroAnterior, numeroAtual, verificacao;
 
         System.out.print("Quantos números deseja inserir: ");
         qtdInserida = input.nextInt();
+
+        verificacao = qtdInserida;
 
         System.out.print("Introduza um número: ");
         numeroAnterior = input.nextInt();
@@ -18,13 +20,15 @@ public class Ex14 {
             System.out.print("Introduza um número: ");
             numeroAtual = input.nextInt();
             qtdInserida--;
-
-            if(numeroAnterior <0);
-
+            if (numeroAnterior < numeroAtual) {
+                verificacao--;
+            }
             numeroAnterior = numeroAtual;
         }
-        System.out.println(numeroAnterior);
+        if (qtdInserida == verificacao) {
+            System.out.println("Crescente");
+        } else {
+            System.out.println("Nao Crescente");
+        }
     }
-
-
 }
