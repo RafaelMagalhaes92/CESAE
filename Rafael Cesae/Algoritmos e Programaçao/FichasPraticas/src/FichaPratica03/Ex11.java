@@ -15,7 +15,7 @@ public class Ex11 {
 
         while (inicio <= limite) {
             System.out.println(inicio);
-            inicio = inicio + incrementadeiro;
+            inicio = inicio + incrementadeiro; // inicio += incrementadeiro;
 
         }
     }

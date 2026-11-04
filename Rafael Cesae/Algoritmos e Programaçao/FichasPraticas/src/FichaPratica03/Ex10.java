@@ -14,7 +14,7 @@ public class Ex10 {
         // imprimir os numeros pares de 2 ao numero escolhido inclusive
         while(par <= numero) {
             System.out.println(par);
-            par = par + 2;
+            par = par + 2; // par += 2; esta forma tambem serve.
         }
     }
 }
