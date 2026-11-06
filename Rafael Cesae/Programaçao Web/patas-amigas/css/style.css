@@ -118,6 +118,7 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    margin-left: 6px;
 }
 
 .cartao {
