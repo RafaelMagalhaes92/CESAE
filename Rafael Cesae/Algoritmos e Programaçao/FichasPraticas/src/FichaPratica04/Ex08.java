@@ -16,8 +16,8 @@ public class Ex08 {
             somatorio += i;
             if(somatorio == numero) {
                 triangular = true;
-                System.out.println(somatorio);
-                System.out.println(numero);
+               // System.out.println(somatorio);
+               // System.out.println(numero);
             }
         }
 
