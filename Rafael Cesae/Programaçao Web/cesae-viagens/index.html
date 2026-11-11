@@ -12,53 +12,181 @@
 
 <body>
     <header>
-    
-    <nav class="navbar bg-dark py-3 px-3 px-md-5">
-        <div class="container d-flex align-items-center flex-nowrap">
-            
-            <!-- Logotipo - o text-nowrap ajuda a nao partir o nome -->
-            <p class="logotipo fw-bold mb-0 me-3 me-md-4 text-nowrap">
-                <a class="text-decoration-none text-white d-inline-flex align-items-center gap-2" href="#">
-                    <i class="bi bi-airplane"></i>
-                    CESAE Viagens
-                </a>
-            </p>
 
-            <!-- Links -->
-            <ul class="navbar-nav d-flex flex-row align-items-center gap-2 gap-md-3 me-auto mb-0">
-                <li class="nav-item">
-                    <a class="nav-link text-white p-0" href="#">Início</a>
-                </li>
-                <li class="nav-item dropdown"> <!-- Dar fix no dropdown que esta a partir a navbar-->
-                    <a class="nav-link dropdown-toggle text-white-50 p-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                        Destinos
+        <nav class="navbar navbar-expand-sm bg-dark py-3">
+            <div class="container  d-flex align-items-center flex-nowrap">
+
+                <!-- Logotipo - o text-nowrap ajuda a nao partir o nome -->
+                <p class="logotipo fw-bold mb-0 me-3 me-md-4 text-nowrap">
+                    <a class="text-decoration-none text-white d-inline-flex align-items-center gap-2" href="#">
+                        <i class="bi bi-airplane"></i>
+                        CESAE Viagens
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white-50 p-0" href="#">Planos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white-50 p-0" href="#">Perguntas</a>
-                </li>
-            </ul>
+                </p>
 
-            <!-- Botão Reservar - o flex-shrink ajuda o botao a ficar a direita e nao ir para cima dos elementos -->
-            <button type="button" class="btn btn-warning btn-sm fw-semibold px-3 flex-shrink-0 ms-2">Reservar</button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse sm-2"> <!-- collapse para mobile -->
+                    <button button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-items-center gap-2 gap-md-3 me-auto mb-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white p-0" href="#">Início</a>
+                            </li>
+                            <li class="nav-item dropdown"> <!-- Dar fix no dropdown que esta a partir a navbar-->
+                                <a class="nav-link dropdown-toggle text-white-50 p-0" data-bs-toggle="dropdown" href="#"
+                                    role="button" aria-expanded="false">
+                                    Destinos
+                                </a>
+                                <ul class="dropdown-menu position-absolute">
+                                    <!-- Fix do dropdown ao usar position absolute -->
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 p-0" href="#">Planos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 p-0" href="#">Perguntas</a>
+                            </li>
+                        </ul>
+                    </div>
 
-        </div>
-    </nav>
-</header>
+                </div>
+                <!-- Botão Reservar - o flex-shrink ajuda o botao a ficar a direita e nao ir para cima dos elementos -->
+                <button type="button"
+                    class="btn btn-warning btn-sm fw-semibold px-3 flex-shrink-0 sm-2">Reservar</button>
+            </div>
+        </nav>
+    </header>
     <main>
-        <section class="text-center bg-dark text-white">
-            <h2> Descubra o mundo com a CESAE Viagens </h1>
-                <p> Viagens à medida, com a apoio em português do primeiro ao último dia.</p>
-                <button type="button" class="btn btn-warning btn-sm">Ver Planos</button>
-                <button type="button" class="btn btn-outline-light btn-sm">Ver destinos</button>
+        <section class="text-center bg-dark text-white py-5">
+            <h1 class="fw-bold"> Descubra o mundo com a CESAE Viagens </h1>
+            <p><small> Viagens à medida, com apoio em português do primeiro ao último dia.</small></p>
+            <button type="button" class="btn btn-warning btn-sm px-3">Ver Planos</button>
+            <button type="button" class="btn btn-outline-light btn-sm px-3">Ver destinos</button>
+        </section>
+
+        <!------------------------------------------------------->
+
+        <section class="container py-5">
+            <div class="text-center mb-4">
+                <h4>Porquê a CESAE Viagens?</h4>
+            </div>
+
+            <!-- Três vantagens -->
+            <div class="row text-center justify-content-center g-2">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-geo-alt fs-2 text-primary"></i>
+                        </div>
+
+                        <h5>Destinos à medida</h5>
+
+                        <p class="text-muted small">Escolhemos o roteiro consigo, do primeiro café ao último pôr do sol.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-shield-check fs-2 text-primary"></i>
+                        </div>
+
+                        <h5>Viagem em segurança</h5>
+
+                        <p class="text-muted small">Seguro incluído e apoio 24 horas, em português, onde quer que esteja.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-calendar-check fs-2 text-primary"></i>
+                        </div>
+
+                        <h5>Datas flexíveis</h5>
+
+                        <p class="text-muted small">Altera a data de viagem até 15 dias antes, sem custos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!------------------------------------------------------->
+
+        <section>
+            carrocel
+        </section>
+
+        <!------------------------------------------------------->
+
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="text-center mb-4">
+                    <h4> Os nossos planos</h4>
+                </div>
+
+                <!-- card 1 -->
+                <div class="col-md mb-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-transparent text-center">Essencial</div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <p class="card-title display-6 mb-1">199€</p>
+                            <p class="card-text text-muted mb-4">Por pessoa</p>
+                            <p class="card-text lh-lg">Voos e alojamento <br> Seguro de viagem <br> Apoio por email </p>
+                            <button class="btn btn-outline-primary mt-auto">Escolher</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="col-md mb-3">
+                    <div class="card border-primary shadow-sm h-100">
+                        <div class="card-header bg-primary text-white text-center">Família (mais popular)</div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <p class="card-title display-6 mb-1">349€</p>
+                            <p class="card-text text-muted mb-4">por pessoa</p>
+                            <p class="card-text lh-lg">Tudo do Essencial <br> Transfers incluídos <br> Atividades para crianças <br> Apoio 24 horas</p>
+                            <button type="button" class="btn btn-primary mt-auto">Escolher</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="col-md mb-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-header bg-transparent text-center">Essencial</div>
+                        <div class="card-body text-center d-flex flex-column">
+                            <p class="card-title display-6 mb-1">599€</p>
+                            <p class="card-text text-muted mb-4">por pessoa</p>
+                            <p class="card-text lh-lg">Tudo da Familía <br> Hotéis de 5 estrelas <br> Guia privado <br> Cancelamento flexível </p>
+                            <button type="button" class="btn btn-outline-primary mt-auto">Escolher</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------------->
+
+        <section>
+            Perguntas frequentes
+        </section>
+
+        <section>
+            Peça uma proposta
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
