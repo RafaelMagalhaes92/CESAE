@@ -12,7 +12,6 @@
 
 <body>
     <header>
-
         <nav class="navbar navbar-expand-sm bg-dark py-3">
             <div class="container  d-flex align-items-center flex-nowrap">
 
@@ -24,7 +23,7 @@
                     </a>
                 </p>
 
-                <!-- Links -->
+
                 <div class="collapse navbar-collapse sm-2"> <!-- collapse para mobile -->
                     <button button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,18 +48,18 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white-50 p-0" href="#">Planos</a>
+                                <a class="nav-link text-white-50 p-0" href="#planos">Planos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white-50 p-0" href="#">Perguntas</a>
+                                <a class="nav-link text-white-50 p-0" href="#FAQ">Perguntas</a>
                             </li>
                         </ul>
                     </div>
 
                 </div>
                 <!-- Botão Reservar - o flex-shrink ajuda o botao a ficar a direita e nao ir para cima dos elementos -->
-                <button type="button"
-                    class="btn btn-warning btn-sm fw-semibold px-3 flex-shrink-0 sm-2">Reservar</button>
+                <button type="button" class="btn btn-warning btn-sm fw-semibold px-3 flex-shrink-0 sm-2"
+                    href="#reservar">Reservar</button>
             </div>
         </nav>
     </header>
@@ -68,18 +67,17 @@
         <section class="text-center bg-dark text-white py-5">
             <h1 class="fw-bold"> Descubra o mundo com a CESAE Viagens </h1>
             <p><small> Viagens à medida, com apoio em português do primeiro ao último dia.</small></p>
-            <button type="button" class="btn btn-warning btn-sm px-3">Ver Planos</button>
+            <button type="button" class="btn btn-warning btn-sm px-3" href="#planos">Ver Planos</button>
             <button type="button" class="btn btn-outline-light btn-sm px-3">Ver destinos</button>
         </section>
 
-        <!------------------------------------------------------->
+        <!------------------------ 3 Vantagens ------------------------------->
 
         <section class="container py-5">
             <div class="text-center mb-4">
                 <h4>Porquê a CESAE Viagens?</h4>
             </div>
 
-            <!-- Três vantagens -->
             <div class="row text-center justify-content-center g-2">
 
                 <!-- Card 1 -->
@@ -91,7 +89,8 @@
 
                         <h5>Destinos à medida</h5>
 
-                        <p class="text-muted small">Escolhemos o roteiro consigo, do primeiro café ao último pôr do sol.</p>
+                        <p class="text-muted small">Escolhemos o roteiro consigo, do primeiro café ao último pôr do sol.
+                        </p>
                     </div>
                 </div>
 
@@ -104,7 +103,8 @@
 
                         <h5>Viagem em segurança</h5>
 
-                        <p class="text-muted small">Seguro incluído e apoio 24 horas, em português, onde quer que esteja.</p>
+                        <p class="text-muted small">Seguro incluído e apoio 24 horas, em português, onde quer que
+                            esteja.</p>
                     </div>
                 </div>
 
@@ -124,71 +124,235 @@
             </div>
         </section>
 
-        <!------------------------------------------------------->
+        <!-------------------------- Carrocel ----------------------------->
 
         <section>
             carrocel
         </section>
 
-        <!------------------------------------------------------->
+        <!-------------------------- Os nossos planos ----------------------------->
 
-        <section class="container">
-            <div class="row justify-content-center">
-                <div class="text-center mb-4">
-                    <h4> Os nossos planos</h4>
-                </div>
+        <section>
+            <div id="planos" class="container mb-4">
+                <div class="row justify-content-center">
+                    <div class="text-center mb-4">
+                        <h4> Os nossos planos</h4>
+                    </div>
 
-                <!-- card 1 -->
-                <div class="col-md mb-3">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-header bg-transparent text-center">Essencial</div>
-                        <div class="card-body text-center d-flex flex-column">
-                            <p class="card-title display-6 mb-1">199€</p>
-                            <p class="card-text text-muted mb-4">Por pessoa</p>
-                            <p class="card-text lh-lg">Voos e alojamento <br> Seguro de viagem <br> Apoio por email </p>
-                            <button class="btn btn-outline-primary mt-auto">Escolher</button>
+                    <!-- card 1 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-transparent text-center">Essencial</div>
+                            <div class="card-body text-center d-flex flex-column">
+                                <p class="card-title display-6 mb-1">199€</p>
+                                <p class="card-text text-muted mb-4">Por pessoa</p>
+                                <p class="card-text lh-lg">Voos e alojamento <br> Seguro de viagem <br> Apoio por email
+                                </p>
+                                <button class="btn btn-outline-primary mt-auto">Escolher</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- card 2 -->
-                <div class="col-md mb-3">
-                    <div class="card border-primary shadow-sm h-100">
-                        <div class="card-header bg-primary text-white text-center">Família (mais popular)</div>
-                        <div class="card-body text-center d-flex flex-column">
-                            <p class="card-title display-6 mb-1">349€</p>
-                            <p class="card-text text-muted mb-4">por pessoa</p>
-                            <p class="card-text lh-lg">Tudo do Essencial <br> Transfers incluídos <br> Atividades para crianças <br> Apoio 24 horas</p>
-                            <button type="button" class="btn btn-primary mt-auto">Escolher</button>
+                    <!-- card 2 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card border-primary shadow-sm h-100">
+                            <div class="card-header bg-primary text-white text-center">Família (mais popular)</div>
+                            <div class="card-body text-center d-flex flex-column">
+                                <p class="card-title display-6 mb-1">349€</p>
+                                <p class="card-text text-muted mb-4">por pessoa</p>
+                                <p class="card-text lh-lg">Tudo do Essencial <br> Transfers incluídos <br> Atividades
+                                    para crianças <br> Apoio 24 horas</p>
+                                <button type="button" class="btn btn-primary mt-auto">Escolher</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- card 3 -->
-                <div class="col-md mb-3">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-header bg-transparent text-center">Essencial</div>
-                        <div class="card-body text-center d-flex flex-column">
-                            <p class="card-title display-6 mb-1">599€</p>
-                            <p class="card-text text-muted mb-4">por pessoa</p>
-                            <p class="card-text lh-lg">Tudo da Familía <br> Hotéis de 5 estrelas <br> Guia privado <br> Cancelamento flexível </p>
-                            <button type="button" class="btn btn-outline-primary mt-auto">Escolher</button>
+                    <!-- card 3 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-transparent text-center">Essencial</div>
+                            <div class="card-body text-center d-flex flex-column">
+                                <p class="card-title display-6 mb-1">599€</p>
+                                <p class="card-text text-muted mb-4">por pessoa</p>
+                                <p class="card-text lh-lg">Tudo da Familía <br> Hotéis de 5 estrelas <br> Guia privado
+                                    <br>
+                                    Cancelamento flexível
+                                </p>
+                                <button type="button" class="btn btn-outline-primary mt-auto">Escolher</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!------------------------------------------------------->
+        <!-------------------------- Accordion FAQ ----------------------------->
 
-        <section>
-            Perguntas frequentes
+        <section id="FAQ" class="bg-light py-4 py-md-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="text-center mb-2">
+                        <h3>Perguntas frequentes</h4>
+                    </div>
+
+                    <div class="accordion col-12 col-md-8" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Posso pagar em prestações?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    Sim. Dividimos o valor em até 6 prestações, sem juros.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    O que acontece se eu precisar de cancelar?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus facilis
+                                    deserunt cum asperiores tempore. Aperiam repellendus, esse totam sequi laudantium,
+                                    accusamus labore aliquid dicta consequatur laborum culpa nesciunt ab?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    As crianças pagam o mesmo?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at id, perspiciatis
+                                    aspernatur, beatae dolor doloribus est eaque maiores aliquid aliquam eius autem sunt
+                                    ducimus. Atque accusamus aperiam voluptates quo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            Peça uma proposta
+        <!-------------------------- Form Reservar----------------------------->
+
+        <section id="reservar" class="py-4 py-md-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="text-center">
+                        <h4>Peça uma proposta</h4>
+                    </div>
+
+                    <form class="row col-8-md g-3 ">
+                        <div class="col-md-6">
+                            <label for="validationDefault01" class="form-label">Nome</label>
+                            <input type="name" class="form-control" id="validationDefault01" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationDefault04" class="form-label">Destino</label>
+                            <select id="validationDefault04" class="form-select">
+                                <option value="1">Lisboa</option>
+                                <option value="2">Açores</option>
+                                <option value="3">Madeira</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Número de pessoas</label>
+                            <input type="text" class="form-control" id="inputCity" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="invalidCheck2" required>
+                                <label class="small form-check-label" for="invalidCheck2">
+                                    Aceito ser contactado(a) com a proposta
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar pedido</button>
+                    </form>
+                </div>
+            </div>
+
         </section>
     </main>
+
+    <!-------------------------- Footer ----------------------------->
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+
+            <div class="row align-items-start">
+                <div class="col-md-4 mb-3">
+                    <a class="text-decoration-none text-white" href="#">
+                        <i class="bi bi-airplane"></i>
+                        CESAE Viagens
+                    </a>
+                    <br>
+                    <small class="text-white-50">
+                        Viagens à medida desde 2025.
+                    </small>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6>Ligações</h6>
+
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="#planos" class="text-white-50 text-decoration-none">Planos</a></li>
+                        <li><a href="#FAQ" class="text-white-50 text-decoration-none">Perguntas frequentes</a></li>
+                        <li><a href="#contactos" class="text-white-50 text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6>Newsletter</h6>
+                    <form class="d-flex mb-2">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>   
+                            <input type="email" class="form-control form-control-sm" placeholder="O seu email" required>
+                            <button class="btn btn-warning btn-sm " type="submit">Subscrever</button>
+                        </div>
+                    </form>
+                    <div>
+                        <a href="#" class="text-white me-2">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-2">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="text-center">
+                <small class="text-white-50">
+                    &copy; 2026 CESAE Viagens
+                </small>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
