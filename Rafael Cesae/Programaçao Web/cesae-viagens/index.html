@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CESAE Viagens</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -12,128 +13,190 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark py-3">
-            <div class="container  d-flex align-items-center flex-nowrap">
+        <nav class="navbar navbar-expand-sm bg-dark py-2 py-md-3">
+            <div class="container d-flex align-items-center">
 
                 <!-- Logotipo - o text-nowrap ajuda a nao partir o nome -->
-                <p class="logotipo fw-bold mb-0 me-3 me-md-4 text-nowrap">
-                    <a class="text-decoration-none text-white d-inline-flex align-items-center gap-2" href="#">
-                        <i class="bi bi-airplane"></i>
-                        CESAE Viagens
-                    </a>
-                </p>
+                <a class="text-decoration-none text-white mb-0 me-3 me-md-4 text-nowrap fw-bold d-inline-flex align-items-center gap-2"
+                    href="#">
+                    <i class="bi bi-airplane"></i>
+                    CESAE Viagens
+                </a>
 
+                <button class="navbar-toggler py-0 px-1 bg-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
 
-                <div class="collapse navbar-collapse sm-2"> <!-- collapse para mobile -->
-                    <button button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav align-items-center gap-2 gap-md-3 me-auto mb-0">
-                            <li class="nav-item">
-                                <a class="nav-link text-white p-0" href="#">Início</a>
-                            </li>
-                            <li class="nav-item dropdown"> <!-- Dar fix no dropdown que esta a partir a navbar-->
-                                <a class="nav-link dropdown-toggle text-white-50 p-0" data-bs-toggle="dropdown" href="#"
-                                    role="button" aria-expanded="false">
-                                    Destinos
-                                </a>
-                                <ul class="dropdown-menu position-absolute">
-                                    <!-- Fix do dropdown ao usar position absolute -->
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white-50 p-0" href="#planos">Planos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white-50 p-0" href="#FAQ">Perguntas</a>
-                            </li>
-                        </ul>
-                    </div>
-
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav flex-row flex-wrap justify-content-center align-items-center gap-2 gap-md-3 me-auto mb-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white p-0">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white-50 p-0" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">
+                                Destinos
+                            </a>
+                            <ul class="dropdown-menu position-absolute">
+                                <li><a href="#" class="dropdown-item">Lisboa</a></li>
+                                <li><a href="#" class="dropdown-item">Açores</a></li>
+                                <li><a href="#" class="dropdown-item">Madeira</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#planos" class="nav-link text-white-50 p-0">Planos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#FAQ" class="nav-link text-white-50 p-0">Perguntas</a>
+                        </li>
+                    </ul>
+                    <a href="#reservar" class="btn btn-warning btn-sm fw-semibold px-3 d-block mt-2 mt-md-0 flex-shrink-0 text-decoration-none text-dark">Reservar</a>
                 </div>
-                <!-- Botão Reservar - o flex-shrink ajuda o botao a ficar a direita e nao ir para cima dos elementos -->
-                <button type="button" class="btn btn-warning btn-sm fw-semibold px-3 flex-shrink-0 sm-2"
-                    href="#reservar">Reservar</button>
             </div>
         </nav>
     </header>
     <main>
-        <section class="text-center bg-dark text-white py-5">
-            <h1 class="fw-bold"> Descubra o mundo com a CESAE Viagens </h1>
-            <p><small> Viagens à medida, com apoio em português do primeiro ao último dia.</small></p>
-            <button type="button" class="btn btn-warning btn-sm px-3" href="#planos">Ver Planos</button>
-            <button type="button" class="btn btn-outline-light btn-sm px-3">Ver destinos</button>
+        <section class="bg-dark text-white py-4 py-md-5">
+            <div class="container">
+
+                <div class="row text-center justify-content-center">
+                    <h1 class="fw-bold mb-0"> Descubra o mundo com a CESAE Viagens </h1>
+                    <p><small> Viagens à medida, com apoio em português do primeiro ao último dia.</small></p>
+                    <div>
+                        <a href="#planos" class="btn btn-warning btn-sm px-3 text-decoration-none text-dark">Ver
+                            Planos</a>
+                        <a href="#destinos"
+                            class="btn btn-outline-light btn-sm px-3 text-decoration-none text-white">Ver
+                            destinos</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!------------------------ 3 Vantagens ------------------------------->
 
-        <section class="container py-5">
-            <div class="text-center mb-4">
-                <h4>Porquê a CESAE Viagens?</h4>
-            </div>
-
-            <div class="row text-center justify-content-center g-2">
-
-                <!-- Card 1 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="p-3">
-                        <div class="mb-3">
-                            <i class="bi bi-geo-alt fs-2 text-primary"></i>
-                        </div>
-
-                        <h5>Destinos à medida</h5>
-
-                        <p class="text-muted small">Escolhemos o roteiro consigo, do primeiro café ao último pôr do sol.
-                        </p>
-                    </div>
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h4>Porquê a CESAE Viagens?</h4>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="p-3">
-                        <div class="mb-3">
-                            <i class="bi bi-shield-check fs-2 text-primary"></i>
+                <div class="row text-center justify-content-center g-2">
+
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="p-3">
+                            <div class="mb-3">
+                                <div class="rounded-circle bg-primary-subtle d-flex justify-content-center align-items-center mx-auto mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="bi bi-geo-alt fs-2" style="color: #0c3572;"></i>
+                                </div>
+                            </div>
+                            <h5 class="text-nowrap">Destinos à medida</h5>
+                            <p class="text-muted small">Escolhemos o roteiro consigo, do primeiro café ao último pôr do
+                                sol.
+                            </p>
                         </div>
-
-                        <h5>Viagem em segurança</h5>
-
-                        <p class="text-muted small">Seguro incluído e apoio 24 horas, em português, onde quer que
-                            esteja.</p>
                     </div>
-                </div>
 
-                <!-- Card 3 -->
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="p-3">
-                        <div class="mb-3">
-                            <i class="bi bi-calendar-check fs-2 text-primary"></i>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="p-3">
+                            <div class="mb-3">
+                                <div class="rounded-circle bg-primary-subtle d-flex justify-content-center align-items-center mx-auto mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="bi bi-shield-check fs-3" style="color: #0c3572;"></i>
+                                </div>
+                            </div>
+                            <h5 class="text-nowrap">Viagem em segurança</h5>
+                            <p class="text-muted small">Seguro incluído e apoio 24 horas, em português, onde quer que
+                                esteja.</p>
                         </div>
-
-                        <h5>Datas flexíveis</h5>
-
-                        <p class="text-muted small">Altera a data de viagem até 15 dias antes, sem custos.</p>
                     </div>
-                </div>
 
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-4">
+                        <div class="p-3">
+                            <div class="mb-3">
+                                <div class="rounded-circle bg-primary-subtle d-flex justify-content-center align-items-center mx-auto mb-3"
+                                    style="width: 60px; height: 60px;">
+                                    <i class="bi bi-calendar-check fs-3" style="color: #0c3572;"></i>
+                                </div>
+                            </div>
+                            <h5 class="text-nowrap">Datas flexíveis</h5>
+                            <p class="text-muted small">Altera a data de viagem até 15 dias antes, sem custos.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
         <!-------------------------- Carrocel ----------------------------->
 
-        <section>
-            carrocel
+        <section class="bg-light py-4 py-md-5">
+            <div id="destinos" class="container">
+                <div class="text-center mb-4">
+                    <h4>Destinos em destaque</h4>
+                </div>
+                <div>
+                    <div id="carouselExampleCaptions" class="carousel slide rounded-3 shadow overflow-hidden">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/cesae-viagens/img/lisbon.jpg" class="d-block w-100 object-fit-cover"
+                                    height="350" alt="Cidade de Lisboa">
+                                <div class="carousel-caption">
+                                    <h4>Lisboa</h4>
+                                    <p class="d-none d-md-block">Sete colinas, miradouros e pastéis de nata.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/cesae-viagens/img/azores.jpg" class="d-block w-100 object-fit-cover"
+                                    height="350" alt="Ilha dos Açores">
+                                <div class="carousel-caption">
+                                    <h4>Açores</h4>
+                                    <p class="d-none d-md-block">Lagoas vulcânicas, trilhos verdejantes e queijadas de Vila Franca.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/cesae-viagens/img/madeira.jpg" class="d-block w-100 object-fit-cover"
+                                    height="350" alt="Ilha da Madeira">
+                                <div class="carousel-caption">
+                                    <h4>Madeira</h4>
+                                    <p class="d-none d-md-block">Levadas, falésias sobre o mar e bolo de mel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <!-------------------------- Os nossos planos ----------------------------->
 
-        <section>
-            <div id="planos" class="container mb-4">
+        <section class="py-4 py-md-5">
+            <div id="planos" class="container">
                 <div class="row justify-content-center">
                     <div class="text-center mb-4">
                         <h4> Os nossos planos</h4>
@@ -170,11 +233,11 @@
                     <!-- card 3 -->
                     <div class="col-md-4 mb-3">
                         <div class="card shadow-sm h-100">
-                            <div class="card-header bg-transparent text-center">Essencial</div>
+                            <div class="card-header bg-transparent text-center">Premium</div>
                             <div class="card-body text-center d-flex flex-column">
                                 <p class="card-title display-6 mb-1">599€</p>
                                 <p class="card-text text-muted mb-4">por pessoa</p>
-                                <p class="card-text lh-lg">Tudo da Familía <br> Hotéis de 5 estrelas <br> Guia privado
+                                <p class="card-text lh-lg">Tudo da Família <br> Hotéis de 5 estrelas <br> Guia privado
                                     <br>
                                     Cancelamento flexível
                                 </p>
@@ -191,8 +254,8 @@
         <section id="FAQ" class="bg-light py-4 py-md-5">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="text-center mb-2">
-                        <h3>Perguntas frequentes</h4>
+                    <div class="text-center mb-3">
+                        <h4>Perguntas frequentes</h4>
                     </div>
 
                     <div class="accordion col-12 col-md-8" id="accordionPanelsStayOpenExample">
@@ -256,40 +319,44 @@
                         <h4>Peça uma proposta</h4>
                     </div>
 
-                    <form class="row col-8-md g-3 ">
-                        <div class="col-md-6">
-                            <label for="validationDefault01" class="form-label">Nome</label>
-                            <input type="name" class="form-control" id="validationDefault01" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="validationDefault04" class="form-label">Destino</label>
-                            <select id="validationDefault04" class="form-select">
-                                <option value="1">Lisboa</option>
-                                <option value="2">Açores</option>
-                                <option value="3">Madeira</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">Número de pessoas</label>
-                            <input type="text" class="form-control" id="inputCity" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="invalidCheck2" required>
-                                <label class="small form-check-label" for="invalidCheck2">
-                                    Aceito ser contactado(a) com a proposta
-                                </label>
+                    <form class="col-md-8">
+                        <div class="row mt-md-0 g-3">
+                            <div class="col-md-6">
+                                <label for="validationDefault01" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="validationDefault01" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationDefault04" class="form-label">Destino</label>
+                                <select id="validationDefault04" class="form-select">
+                                    <option value="1">Lisboa</option>
+                                    <option value="2">Açores</option>
+                                    <option value="3">Madeira</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Número de pessoas</label>
+                                <input type="number" class="form-control" min="1" id="inputCity" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="invalidCheck2" required>
+                                    <label class="small form-check-label" for="invalidCheck2">
+                                        Aceito ser contactado(a) com a proposta
+                                    </label>
+                                </div>
+                                <div class="d-flex flex-column mt-2">
+                                    <button type="submit" class="btn btn-primary mt-auto">Enviar pedido</button>
+                                </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar pedido</button>
                     </form>
                 </div>
             </div>
@@ -304,10 +371,7 @@
 
             <div class="row align-items-start">
                 <div class="col-md-4 mb-3">
-                    <a class="text-decoration-none text-white" href="#">
-                        <i class="bi bi-airplane"></i>
-                        CESAE Viagens
-                    </a>
+                    <a href="#" class="text-decoration-none text-white fw-semibold"><i class="bi bi-airplane"></i>CESAE Viagens</a>
                     <br>
                     <small class="text-white-50">
                         Viagens à medida desde 2025.
@@ -326,30 +390,21 @@
                     <h6>Newsletter</h6>
                     <form class="d-flex mb-2">
                         <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>   
+                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
                             <input type="email" class="form-control form-control-sm" placeholder="O seu email" required>
                             <button class="btn btn-warning btn-sm " type="submit">Subscrever</button>
                         </div>
                     </form>
                     <div>
-                        <a href="#" class="text-white me-2">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="#" class="text-white me-2">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a href="#" class="text-white">
-                            <i class="bi bi-youtube"></i>
-                        </a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
-
             </div>
             <hr>
             <div class="text-center">
-                <small class="text-white-50">
-                    &copy; 2026 CESAE Viagens
-                </small>
+                <small class="text-white-50">&copy; 2026 CESAE Viagens</small>
             </div>
         </div>
     </footer>
