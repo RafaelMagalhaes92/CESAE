@@ -4,12 +4,21 @@ import java.util.Scanner;
 
 public class Ex07 {
     public static void desenharQuadrado (char letra, int linhas, int colunas){
-        for (int i = 1; i < colunas; i++) {
-            System.out.print(letra);
-            for (int j = 1; j < linhas; j++) {
-                if(colunas > 1 && colunas <)
-                System.out.println(letra);
+        for (int i = 1; i <= linhas; i++) {
+            for (int j = 1; j <= colunas; j++) {
+                if(i == 1 || i == linhas) {
+                    System.out.print(letra);
+                }
+                // Usar () na minha segunda condição "||" porque o && tem prioridade,
+                // se nao ele iria executar sempre o j == colunas e dar print a mais uma letra do que devido
+                if(i > 1 && i < linhas && (j == 1 || j == colunas)){
+                    System.out.print(letra);
+                }
+                if(i > 1 && i < linhas && j > 1 && j < colunas){
+                    System.out.print(" ");
+                }
             }
+            System.out.println();
         }
     }
 
