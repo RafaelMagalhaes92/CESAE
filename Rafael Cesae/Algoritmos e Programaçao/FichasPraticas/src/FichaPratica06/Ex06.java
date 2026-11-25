@@ -24,7 +24,7 @@ public class Ex06 {
             System.out.println("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
 
             System.out.print("Escolha a sua opção: ");
-            opcao = input.nextByte();
+            opcao = input.nextInt();
 
             switch (opcao) {
                 case 7:

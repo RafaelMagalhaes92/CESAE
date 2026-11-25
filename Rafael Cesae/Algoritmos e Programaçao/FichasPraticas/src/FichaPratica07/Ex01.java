@@ -2,13 +2,13 @@ package FichaPratica07;
 
 import java.io.FileNotFoundException;
 
-import static FichaPratica07.BibliotecaFicheiros.imprimirFicheiros;
+import static FichaPratica07.BibliotecaFicheiros.imprimirFicheiro;
 
 public class Ex01 {
 
 
     public static void main(String[] args) throws FileNotFoundException {
-        imprimirFicheiros("FicheirosFicha07/exercicio_01.txt");
+        imprimirFicheiro("FicheirosFicha07/exercicio_01.txt");
     }
 
 }
