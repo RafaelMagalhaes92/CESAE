@@ -102,14 +102,39 @@ public class BibliotecaFicheiros {
 
     }
 
-    public static String[][] lerFicheiroParaMatriz(String caminho) throws FileNotFoundException {
+    /**
+     *
+     * @param caminho
+     * @return
+     * @throws FileNotFoundException
+     */
+    public static String[][] lerFicheiroParaMatriz(String caminho, String separador) throws FileNotFoundException {
+
         int numeroLinhasFicheiro = contarNumeroLinhas(caminho);
-        int numeroColunasFicheiro = contarColunasFicheiro(caminho, ",");
+        int numeroColunasFicheiro = contarColunasFicheiro(caminho, separador);
 
         String[][] matrizMusicas = new String[numeroLinhasFicheiro - 1][numeroColunasFicheiro];
 
-        return null;
+        File ficheiro = new File(caminho);
+        Scanner sc = new Scanner(ficheiro);
 
+        // Avançar cabeçalho
+        sc.nextLine();
+
+        int linhaPreencher = 0;
+
+        while (sc.hasNextLine()) {
+            String linhaAtual = sc.nextLine();
+            String[] linhaSeparada = linhaAtual.split(separador);
+
+            for (int i = 0; i < linhaSeparada.length; i++) {
+                matrizMusicas[linhaPreencher][i] = linhaSeparada[i];
+            }
+
+            linhaPreencher++;
+        }
+
+        return matrizMusicas;
     }
 
     /**
