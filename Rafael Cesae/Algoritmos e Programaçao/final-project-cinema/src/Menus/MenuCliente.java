@@ -1,10 +1,16 @@
 package Menus;
 
+import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static FuncionalidadesCliente.ConsultarCartazCine.consultarCartaz;
+import static FuncionalidadesCliente.NovoRegisto.novoRegisto;
+import static FuncionalidadesCliente.PesquisarFilmes.pesquisarFilme;
+import static FuncionalidadesCliente.VizualizarMapaSala.escolherSala;
+
 public class MenuCliente {
-    public static void menuCliente(){
+    public static void menuCliente() throws FileNotFoundException {
         Scanner input = new Scanner(System.in);
         int opcao;
 
@@ -36,16 +42,16 @@ public class MenuCliente {
 
             switch (opcao) {
                 case 1:
-                    //Novo registo
+                    novoRegisto();
                     break;
                 case 2:
-                    //Consultar cartaz cinematográfico
+                    consultarCartaz();
                     break;
                 case 3:
-                    //Pesquisar filmes
+                    pesquisarFilme();
                     break;
                 case 4:
-                    //Visualizar mapa de uma sala
+                    escolherSala();
                     break;
                 case 5:
                     //Reservar bilhetes

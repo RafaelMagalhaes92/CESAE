@@ -1,4 +1,4 @@
-package FuncoesAdmin;
+package FuncionalidadesAdmin;
 
 import java.io.FileNotFoundException;
 import java.util.InputMismatchException;

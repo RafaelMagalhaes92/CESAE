@@ -1,4 +1,4 @@
-package FuncoesAdmin;
+package FuncionalidadesAdmin;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,26 +18,26 @@ public class ReceitaPorSala {
             String linhaAtual = sc.nextLine();
             String[] elementosLinha = linhaAtual.split(";");
 
-            if (elementosLinha[7].equals("Mar")){
-                totalVendasMar +=Double.parseDouble(elementosLinha[6]);
+            if (elementosLinha[6].equals("Mar")){
+                totalVendasMar +=Double.parseDouble(elementosLinha[10]);
                 bilhetesMar++;
             }
-            if (elementosLinha[7].equals("Terra")){
-                totalVendasTerra +=Double.parseDouble(elementosLinha[6]);
+            if (elementosLinha[6].equals("Terra")){
+                totalVendasTerra +=Double.parseDouble(elementosLinha[10]);
                 bilhetesTerra++;
             }
-            if (elementosLinha[7].equals("Sol")){
-                totalVendasSol +=Double.parseDouble(elementosLinha[6]);
+            if (elementosLinha[6].equals("Sol")){
+                totalVendasSol +=Double.parseDouble(elementosLinha[10]);
                 bilhetesSol++;
             }
 
 
         }
-        System.out.println("Sala        Bilhetes         Receita (EUR)");
+        System.out.println("Sala         Bilhetes         Receita (EUR)");
         System.out.println("------------------------------------------------------------------------");
-        System.out.println("Sala Mar        " + bilhetesMar + "         " + totalVendasMar);
-        System.out.println("Sala Mar        " + bilhetesTerra + "         " + totalVendasTerra);
-        System.out.println("Sala Mar        " + bilhetesSol + "         " + totalVendasSol);
+        System.out.println("Sala Mar        " + bilhetesMar + "          " + totalVendasMar);
+        System.out.println("Sala Mar        " + bilhetesTerra + "          " + totalVendasTerra);
+        System.out.println("Sala Mar        " + bilhetesSol + "          " + totalVendasSol);
         System.out.println("------------------------------------------------------------------------\n");
 
 

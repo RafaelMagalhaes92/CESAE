@@ -4,9 +4,10 @@ import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static FuncoesAdmin.ConsultarFicheiros.consultarFicheiros;
-import static FuncoesAdmin.EstatisticaVendas.estatisticaVendas;
-import static FuncoesAdmin.ReceitaPorSala.receitaSala;
+import static FuncionalidadesAdmin.ConsultarFicheiros.consultarFicheiros;
+import static FuncionalidadesAdmin.EstatisticaVendas.estatisticaVendas;
+import static FuncionalidadesAdmin.ReceitaPorFilme.receitaFilme;
+import static FuncionalidadesAdmin.ReceitaPorSala.receitaSala;
 
 public class MenuAdmin {
     public static void menuAdmin() throws FileNotFoundException {
@@ -49,7 +50,7 @@ public class MenuAdmin {
                     receitaSala();
                     break;
                 case 4:
-                    //Receita por filme
+                    receitaFilme();
                     break;
                 case 5:
                     //Top 3 filmes com maior receita

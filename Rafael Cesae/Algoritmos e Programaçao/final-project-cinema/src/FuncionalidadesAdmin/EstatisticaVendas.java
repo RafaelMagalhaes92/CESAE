@@ -1,4 +1,4 @@
-package FuncoesAdmin;
+package FuncionalidadesAdmin;
 
 import java.io.File;
 import java.io.FileNotFoundException;

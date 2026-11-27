@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static FuncoesAdmin.Autenticacao.autenticacao;
+import static FuncionalidadesAdmin.Autenticacao.autenticacao;
 import static Menus.MenuAdmin.menuAdmin;
 import static Menus.MenuCliente.menuCliente;
 

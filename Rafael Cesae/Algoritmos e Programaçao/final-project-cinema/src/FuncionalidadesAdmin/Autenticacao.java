@@ -1,10 +1,16 @@
-package FuncoesAdmin;
+package FuncionalidadesAdmin;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Autenticacao {
+
+    /**
+     *
+     * @return false se as credenciais estiverem erradas e true
+     * @throws FileNotFoundException Se o ficheiro nao existir
+     */
     public static boolean autenticacao() throws FileNotFoundException {
         File ficheiro = new File ("GrandeEcraFicheiros/GrandeEcra_AdminLogin.csv");
         Scanner sc = new Scanner(ficheiro);
